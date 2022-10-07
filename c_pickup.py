@@ -6,7 +6,7 @@ import copy
 import openpyxl
 
 path=sys.argv[1]
-with open(path,encoding='utf-8') as f:
+with open(path,encoding='UTF-8') as f:
     f=csv.reader(f)
     all_csv=[row for row in f]
     csv_r=len(all_csv)
@@ -24,9 +24,9 @@ with open(path,encoding='utf-8') as f:
         row_fe+=1
         if tar in i[0]:
             break
-        else:
             continue
     print(row_fs,row_fe)
+    print(target1)
 #行番号name=基礎設計用軸力表
     #f_weight_list=all_csv[row_fs:row_fs+row_fe-2]#軸力表
     #print(f_weight_list)
